@@ -17,7 +17,27 @@ E-Commerce Store
   <title>GotShoes? - Contact Us</title>
 <body> 
 <center>
-Need to reach us for a question, comment or feedback about our Website?
+Need to reach us for a question, comment or feedback about our Website? Please do not hesitate to complete the
+  form below. One of our representative will respond back to you as soon as possible
+  <form action="/action_page.php" id="comment">
+  <fieldset>
+    <legend>Contact Us</legend>
+    First name:<br>
+    <input type="text" name="firstname" value="" required><br>
+    Last name:<br>
+    <input type="text" name="lastname" value="" required><br>
+    Reason:<br>
+    <select name="Type" required>
+    <option value="null">Choose your selection.</option>
+    <option value="Order Update">Order Update</option>
+    <option value="Problem">Problem</option>
+    <option value="Question">Question</option>
+  </select><br><br>
+  <textarea rows="4" cols="50" name="comment" form="comment" required></textarea><br><br>
+    <input type="submit" value="Submit"> <input type="reset">
+    
+  </fieldset>
+</form>
   </center>
 </body>
   
