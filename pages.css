@@ -29,15 +29,17 @@ a:active {
 tr:hover {background-color: #f5f5f5}
 
 /* Navigation Bar */
-li {
-    display: inline;
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #f1f1f1;
+}
 
-	overflow:hidden;
-}
-li {
-    float: left;
-}
 li a {
     display: block;
-    padding: 30px;
-    background-color:rgb(141, 169, 196)
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
