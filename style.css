@@ -33,7 +33,7 @@ tr:hover {background-color: #f5f5f5}
 
 
 /* Navigation Bar */
-menu {
+div {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -41,11 +41,11 @@ menu {
     background-color:rgb(141, 169, 196)
 }
 
-menu{
+div{
     float: left;
 }
 
-menu {
+div {
     display: block;
     color: white;
     text-align: center;
@@ -54,7 +54,7 @@ menu {
 }
 
 /* Navigation Bar */
-menu {
+div {
        list-style-type: none;
     margin: 0;
     padding: 0;
