@@ -28,6 +28,7 @@ a:active {
 
 tr:hover {background-color: #f5f5f5}
 
+<<<<<<< HEAD:style.css
 
 
 
@@ -52,3 +53,19 @@ li a {
     padding: 14px 16px;
     text-decoration: none;
 }
+=======
+/* Navigation Bar */
+ul {
+       list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 25%;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    color:rgb(141, 169, 196);
+}
+nav {
+    text-align: center;
+    {
+>>>>>>> c635dcbe9e14f7091b89775f1f3fb023eb9bccff:pages.css
