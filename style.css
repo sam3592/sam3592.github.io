@@ -39,7 +39,7 @@ ul {
 }
 
 li {
-    float: left;
+    float: center;
 }
 
 li a {
@@ -63,6 +63,6 @@ ul {
 }
 
 nav {
-    text-align: left;
+    text-align: center;
     {
 
