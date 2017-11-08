@@ -23,23 +23,23 @@ E-Commerce Store
 <h2> Contact Us </h2>
 Need to reach us for a question, comment or feedback about our Website? Please do not hesitate to complete the
   form below. One of our representative will respond back to you as soon as possible</center>
-  <form action="" id="comment">
+  <form name="comment" onsubmit="return validateForm()" method="get" >
   <fieldset>
     <legend>Contact Us</legend>
     First name:<br>
-    <input type="text" name="firstname" value="" required><br>
+    <input type="text" name="firstname"><br>
     Last name:<br>
-    <input type="text" name="lastname" value="" required><br>
+    <input type="text" name="lastname"><br>
     E-mail:<br>
-    <input type="email" name="usremail" value="" required><br>
+    <input type="email" name="usremail"><br>
     Reason:<br>
-    <select required>
+    <select>
     <option value="">Choose your reason</option>
     <option value="Order Update">Order Update</option>
     <option value="Problem">Problem</option>
     <option value="Question">Question</option>
   </select><br>
-  <textarea rows="4" cols="50" name="comment" form="comment" required></textarea><br><br>
+  <textarea rows="4" cols="50" name="comment" form="comment"></textarea><br><br>
     <input type="submit" value="Submit"> <input type="reset">
     
   </fieldset>
@@ -47,6 +47,13 @@ Need to reach us for a question, comment or feedback about our Website? Please d
  Today is
 <p id="date"></p>
 <script>
+function validateForm() {
+    var x = document.forms["comment"]["firstname"].value;
+    if (x == "") {
+        alert("Name must be filled out");
+        return false;
+    }
+}
 var d = new Date();
 document.getElementById("date").innerHTML = d.toLocaleDateString();
 </script>
