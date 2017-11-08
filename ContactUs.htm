@@ -17,23 +17,24 @@ E-Commerce Store
 
   <title>GotShoes? - Contact Us</title>
 <body>
+<script src="script.js"></script>
 <div style="margin-left:25%;padding:1px 16px;height:200px;"> 
 <center>
 <h1> GotShoes? </h1>
 <h2> Contact Us </h2>
 Need to reach us for a question, comment or feedback about our Website? Please do not hesitate to complete the
   form below. One of our representative will respond back to you as soon as possible</center>
-  <form name="comment" onsubmit="return validateForm()" method="get" >
-  <fieldset>
+  <form name="comment" action="" onsubmit="return validateForm()" method="get" >
+<fieldset>
     <legend>Contact Us</legend>
     First name:<br>
     <input type="text" name="firstname"><br>
     Last name:<br>
     <input type="text" name="lastname"><br>
     E-mail:<br>
-    <input type="email" name="usremail"><br>
+    <input type="email" name="useremail"><br>
     Reason:<br>
-    <select>
+    <select required>
     <option value="">Choose your reason</option>
     <option value="Order Update">Order Update</option>
     <option value="Problem">Problem</option>
@@ -41,21 +42,11 @@ Need to reach us for a question, comment or feedback about our Website? Please d
   </select><br>
   <textarea rows="4" cols="50" name="comment" form="comment"></textarea><br><br>
     <input type="submit" value="Submit"> <input type="reset">
-    
   </fieldset>
 </form>
+<script src="script.js"></script>
  Today is
 <p id="date"></p>
-<script>
-function validateForm() {
-    var x = document.forms["comment"]["firstname"].value;
-    if (x == "") {
-        alert("Name must be filled out");
-        return false;
-    }
-}
-var d = new Date();
-document.getElementById("date").innerHTML = d.toLocaleDateString();
-</script>
+<script src="script.js"></script>
 </body>
   
