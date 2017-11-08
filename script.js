@@ -12,3 +12,4 @@ function validateForm() {
 
 //Date on pages
 var d = new Date();
+document.getElementById("date").innerHTML= d.toLocaleDateString();

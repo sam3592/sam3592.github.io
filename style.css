@@ -56,11 +56,21 @@ ul {
        list-style-type: none;
     margin: 0;
     padding: 0;
-    width: 25%;
+    width: 19%;
     position: fixed;
-    height: 25%;
+    height: 15%;
     overflow: auto;
     color:rgb(141, 169, 196);
+text-align: center;
+    float: left;
+    font-size: 1.5em;
+    max-width: 160px;  
+    margin-top: 2em;   
+    margin-right: 1.5em;
+    padding: 1.5em;
+    border-right: thin solid #33FF00;
+    position: fixed;
+    height: 100%;
 }
 
 nav {
