@@ -7,9 +7,19 @@ E-Commerce Store
 <html lang="en" xmins= "http://w3.org/1999/xhtml">
 
 <ul>
-<li><a href="index.htm">Home</a></li>
-<li><a href="basketballshoes.htm">Products</a></li>
-<li><a href="ContactUs.htm">Contact Us</a></li>
+<div class="navbar">
+  <a href="index.htm">Home</a>
+  <div class="dropdown">
+    <button class="dropbtn">Products 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="basketballshoes.htm">Basketball Shoes</a>
+      <a href="tailorshoes.htm">Dress Shoes</a>
+    </div>
+  </div> 
+<a href="ContactUs.htm">Contact Us</a>
+</div>
 </ul>
 
 <meta charset="utf-8">
@@ -19,7 +29,7 @@ E-Commerce Store
   <title>GotShoes? - Contact Us</title>
 <body>
 <script src="script.js"></script>
-<div style="margin-left:25%;padding:1px 16px;height:200px;"> 
+<div style="margin-left:5%;padding:1px 16px;height:200px;"> 
 <center>
 <h1> GotShoes? </h1>
 <h2> Contact Us </h2>
