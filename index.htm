@@ -30,7 +30,7 @@ E-Commerce Store
 <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
-<center><h1> GotShoes? </h1></center>
+<center><h1> GotShoes? </h1> <img src="http://68.media.tumblr.com/88bed3dca4cfb5609b21b1685ee62967/tumblr_o94d631GT61sz8e0oo1_500.jpg" height="350" width="350" alt="Shoes"></center>
 <hr>
 
 
@@ -38,7 +38,50 @@ E-Commerce Store
   <meta charset="utf-8">
 
 <center>
-<img src="http://68.media.tumblr.com/88bed3dca4cfb5609b21b1685ee62967/tumblr_o94d631GT61sz8e0oo1_500.jpg" height="350" width="350" alt="Shoes">
+<div class="w3-content w3-display-container">
+  <img class="mySlides" src="https://newsneakernews-wpengine.netdna-ssl.com/wp-content/uploads/2017/11/air-jordan-11-xi-heiress-852625-030-0.jpg" height="660" width="940">
+  <img class="mySlides" src="http://i.ebayimg.com/00/s/NjM4WDg1MA==/z/GdIAAOSw5cNYWLjy/$_35.JPG?set_id=8800005007" height="660" width="940">
+  <img class="mySlides" src="http://media.aldoshoes.com/v2/product/collamato/95/collamato_black_95_main_sq_gy_2000x2000.jpg" height="660" width="940">
+  <img class="mySlides" src="https://newsneakernews-wpengine.netdna-ssl.com/wp-content/uploads/2017/11/air-jordan-11-xi-heiress-852625-030-0.jpg" height="660" width="940">
+
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+
+</div>
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+var slideIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none"; 
+    }
+    slideIndex++;
+    if (slideIndex > x.length) {slideIndex = 1} 
+    x[slideIndex-1].style.display = "block"; 
+    setTimeout(carousel, 1000); // Change image every 2 seconds
+}
+</script>
+
 
 
 <h3><p>Welcome to GotShoes? You will find an
