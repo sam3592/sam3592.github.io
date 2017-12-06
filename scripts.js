@@ -38,7 +38,7 @@ function startRace()
         {
             document.getElementById("winner").src = "redcar.jpg";
             win.style.display = 'inline';
-	window.alert("The blue car won! Refresh page");
+	window.alert("The red car won! Refresh page");
         }
         else
         {
@@ -56,6 +56,6 @@ function resetTheRace()
     bluecar.style.marginLeft = 0;
     redcar.style.marginLeft = 0;
     bluePlaceHolder= 0;
-    redPlaceholder=0;
+    redPlaceholder= 0;
 
 }
