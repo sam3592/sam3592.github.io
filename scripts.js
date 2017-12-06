@@ -3,8 +3,8 @@ var redcar = document.getElementById("redcar");
 var bluecar = document.getElementById("bluecar");
 var win = document.getElementById("win");
 win.style.display = 'none';
-var redPlaceholder = 1;
-var bluePlaceHolder = 1;
+var redPlaceholder = 0;
+var bluePlaceHolder = 0;
 var raceStarted = false;
 
 function changeLightColor()
@@ -18,7 +18,7 @@ function startRace()
     raceStarted = true;
 
     setTimeout(function () {
-        var redSpeed = (Math.random() * 230) + redPlaceholder;
+        var redSpeed = (Math.random() * 220) + redPlaceholder;
         var blueSpeed = (Math.random() * 210) + bluePlaceHolder;
         redCar.style.marginLeft = redSpeed + 'px';
         blueCar.style.marginLeft = blueSpeed + 'px';
