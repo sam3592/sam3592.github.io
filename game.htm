@@ -1,0 +1,42 @@
+
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <title> Ravce Game</title>
+</head>
+
+<body>
+
+    <br>
+    <br>
+    <br>
+    <br>
+   
+    <div id="blueCar">
+
+        <img src="bluecar.png" alt="bluecar" style="width: 100px; height: 75px; ">
+    </div>
+    <br>
+    <br>
+    <br>
+
+    <div id="redCar">
+        <img src="redcar.jpg" alt="redcar" style="width: 100px; height: 75px;">
+    </div>
+    <br>
+    <br>
+    <div id="win">
+        <h1>YOU WIN!</h1>
+        <img src="bluecar.jpg" onclick="resetTheRace()" style="width: 400px; height: 300px;" id="winner">
+    </div>
+
+    <br>
+    <header>
+        <img src="redstop.png" onclick="startRace(), changeLightColor()" alt="redstop" style="width: 350px; height: 200px;" id="redstop">
+    </header>
+</body>
+<script src="scripts.js"></script>
+</html>
