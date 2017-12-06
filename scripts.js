@@ -17,7 +17,8 @@ function startRace()
 {
     raceStarted = true;
 
-    setTimeout(function () {
+    setTimeout(function () 
+{
         var redSpeed = (Math.random() * 220) + redPlaceholder;
         var blueSpeed = (Math.random() * 210) + bluePlaceHolder;
         redCar.style.marginLeft = redSpeed + 'px';
